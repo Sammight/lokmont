@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+  {% include head.md %}
   
   {% if page.url == '/' %}
     {% assign class = 'body-post' %}
@@ -14,16 +14,16 @@
 
     <div class="full-page-container">
       <div class="overlay"></div>
-      {% include header.html %}
-      {% include search.html %}
+      {% include header.md %}
+      {% include search.md %}
 
         {{ content }}
 
-      {% include scroll-top.html %}
-      {% include footer.html %}
+      {% include scroll-top.md %}
+      {% include footer.md %}
     </div> <!-- /.full-page-container -->
 
-    {% include javascripts.html %}
+    {% include javascripts.md %}
   </body>
 
 </html>
